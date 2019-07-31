@@ -3,8 +3,9 @@ public class Solution4 {
     /* my final approach
         this one's runtime is theta(n)  result: 2ms beats 100% java submission!
 
-        idea is that build 2 array (small,middle) to track the smallest number BEFORE index i(name it as MIN) and the smallest but bigger than MIN number
-        AFTER index i; then iterate i, if nums[i] > small[i] && nums[i] > middle[i] && middle[i] > small[i] (nums[i]is the biggest)
+        idea is that build 2 array (small,middle) to track the smallest number BEFORE index i(name it as MIN) and the smallest
+        but bigger than MIN number AFTER index i; then iterate i,
+        if nums[i] > small[i] && nums[i] > middle[i] && middle[i] > small[i] (nums[i]is the biggest)
         then return true ( middle[i]>small[i] is redundent)
      */
 
